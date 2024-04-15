@@ -1,0 +1,15 @@
+/**
+ * Returns a new ArrayBuffer with an Int8 value at a specific position
+ * @param {*Number} length
+ * @param {*Number} position
+ * @param {*Number} value
+ */
+
+export default function createInt8TypedArray(length, position, value) {
+  if (position >= length) {
+    throw new Error('Postion outside range');
+  }
+  const buf = new DataView(new ArrayBuffer(length), 0, length);
+  buf.setInt8(position, value);
+  return buf;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "0x06-unittests_in_js",
+  "version": "1.0.0",
+  "description": "ALX Tasks",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "EmmanuelAdu",
+  "license": "MIT",
+  "devDependencies": {
+    "assert": "^2.1.0",
+    "mocha": "^10.4.0"
+  }
+}

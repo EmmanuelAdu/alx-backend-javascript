@@ -1,20 +1,15 @@
 const Utils = {
-  calculateNumber(type, a, b){
-    const round_a = Math.round(a);
-    const round_b = Math.round(b);
-    
+  calculateNumber(type, a, b) {
     if (type === 'SUM') {
-        return round_a + round_b;
+      return Math.round(a) + Math.round(b);
     }
     if (type === 'SUBTRACT') {
-        return round_a - round_b;
+      return Math.round(a) - Math.round(b);
     }
     if (type === 'DIVIDE') {
-        if (round_b === 0) {
-            return 'Error';
-        }
-        return round_a / round_b;
+      return Math.round(b) === 0 ? 'Error' : Math.round(a) / Math.round(b);
     }
+    return 0;
   },
 };
 
